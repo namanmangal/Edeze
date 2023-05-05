@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Edeze</string>
+    <string name="enterButtonLabel">ENTER</string>
+    <string name="findatutorLabel">Find a Tutor in your Area</string>
+    <string name="enterlocationLabel">Enter Location</string>
+    <string name="haveAccountLabel">I HAVE AN ACCOUNT</string>
+    <string name="signUpLabel">sign up</string>
+    <string name="mottoLabel">where scholars and students gather</string>
+    <string name="logoDescriptionLabel">logo</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="userName">First Last</string>
+    <string name="favorite_questionsLabel">Favorite Questions</string>
+    <string name="tutorsLabel">Tutors</string>
+    <string name="posted_questionsLabel">Posted Questions</string>
+    <string name="questions_askedLabel">Questions Asked:</string>
+    <string name="amount_askedLabel">1234</string>
+    <string name="questions_answeredLabel">Questions Answered:</string>
+    <string name="amount_answeredLabel">1234</string>
+    <string name="profile_photoDescription">profile photo</string>
+    <string name="personal_informationLabel">Personal Information</string>
+    <string name="title_activity_edit_profile">Edit_profile</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_search_questions">search_questions</string>
+    <string-array name="navbar_array">
+        <item></item>
+        <item>Profile</item>
+        <item>Settings</item>
+        <item>Q&amp;A</item>
+        <item>Tutors</item>
+        <item>Logout</item>
+    </string-array>
+    <string-array name="spinner_pronoun_array">
+        <item></item>
+        <item>She / Her</item>
+        <item>He / Him</item>
+        <item>They / Them</item>
+        <item>Any Pronouns</item>
+        <item>Ask for Pronouns</item>
+        <item>Other</item>
+    </string-array>
+
+    <!-- Facebook application ID and custom URL scheme (app ID prefixed by 'fb'). -->
+    <string name="facebook_application_id" translatable="false">YOUR_APP_ID</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">fbYOUR_APP_ID</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="fcm_message">Notification Message</string>
+    <string name="default_notification_channel_name" translatable="true">Notification</string>
+    <string name="msg_token_fmt" translatable="false">FCM registration Token: %s</string>
+</resources>

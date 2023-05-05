@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- db -->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FindTutorActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="60dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/radius_main_color"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/findatutorLabel"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"/>
+
+            <SearchView
+                android:id="@+id/search_view_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/radius_white"
+                android:inputType="textPostalAddress"
+                android:queryHint="@string/enterlocationLabel"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:elevation="5dp"
+                android:iconifiedByDefault="false"/>
+
+        </LinearLayout>
+
+        <fragment
+            android:id="@+id/google_map_fragment"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/radius_light_grey"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Possible Tutors"
+                android:textStyle="bold"
+                android:textColor="@color/main_color_VERYDARK"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <Button
+                        android:id="@+id/tutor1button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:autofillHints=""
+                        android:gravity="left|center_vertical"
+                        android:text="Tutor 1"
+                        android:layout_marginBottom="2dp"
+                        android:onClick="viewTutorClick"
+                         />
+                    <Button
+                        android:id="@+id/tutor2button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:autofillHints=""
+                        android:gravity="center_vertical"
+                        android:text="Tutor 2"
+                        android:layout_marginBottom="2dp"
+
+                        />
+                    <Button
+                        android:id="@+id/tutor3button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:autofillHints=""
+                        android:gravity="left|center_vertical"
+                        android:text="Tutor 3"
+                        android:layout_marginBottom="2dp"
+                        />
+                    <Button
+                        android:id="@+id/tutor4button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:autofillHints=""
+                        android:gravity="left|center_vertical"
+                        android:text="Tutor 4"
+                        android:layout_marginBottom="5dp"
+                        />
+                    <Button
+                        android:id="@+id/tutor5button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:autofillHints=""
+                         android:gravity="left|center_vertical"
+                        android:text="Tutor 5"
+                        android:layout_marginBottom="2dp"
+
+                        />
+                    <Button
+                        android:id="@+id/tutor6button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:autofillHints=""
+                        android:gravity="left|center_vertical"
+                        android:text="Tutor 6"
+                        android:layout_marginBottom="2dp"
+                        />
+                    <Button
+                        android:id="@+id/tutor7button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:autofillHints=""
+                        android:gravity="center_vertical"
+                        android:text="Tutor 7"
+                        android:layout_marginBottom="2dp"
+                        />
+                    <Button
+                        android:id="@+id/tutor8button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:autofillHints=""
+                        android:gravity="center_vertical"
+                        android:text="Tutor 8"
+                        android:layout_marginBottom="2dp"
+                        />
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+  </androidx.constraintlayout.widget.ConstraintLayout>

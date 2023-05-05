@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- nm -->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostQuestionActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/radius_main_color"
+        android:layout_marginTop="90dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Question Title:"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"/>
+        <EditText
+            android:id="@+id/question_title_input"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/radius_white"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:hint="Title Here" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Question Description:"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"/>
+        <EditText
+            android:id="@+id/question_description_input"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/radius_white"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:hint="Description Here" />
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Post as Anonymous"
+            android:layout_margin="5dp"
+            android:textSize="15sp"
+            android:textColor="@color/grey_LIGHT"
+            android:textStyle="bold"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/cancel_post_button"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:background="@drawable/radius_lightpurple"
+                android:layout_margin="5dp"
+                android:text="Cancel"
+                android:onClick="cancelPost"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/submit_post_button"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:background="@drawable/radius_lightpurple"
+                android:layout_margin="5dp"
+                android:text="Submit"
+                android:onClick="submitPost"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- db -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:srcCompat="@drawable/logo_with_circle"
+            android:layout_marginBottom="30dp"
+            android:contentDescription="@string/logoDescriptionLabel" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mottoLabel"
+            android:textColor="@color/grey_NORMAL"
+            android:textSize="16sp"
+            android:layout_marginBottom="60dp"
+            />
+
+        <Button
+            android:id="@+id/signUpButtonMainPage"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="@string/signUpLabel"
+            android:gravity="center"
+            android:background="@drawable/radius_main_color"
+            android:layout_marginBottom="15dp"
+            android:onClick="main_signClick"
+            />
+
+        <android.widget.Button
+            android:id="@+id/logInButtonMainPage"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="@string/haveAccountLabel"
+            android:gravity="center"
+            android:background="@drawable/radius_white"
+            android:textColor="@color/grey_NORMAL"
+            android:onClick="main_loginClick"
+            style="?android:attr/borderlessButtonStyle"
+            />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

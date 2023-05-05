@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "329757272933",
+    "firebase_url": "https://edeze-1faba-default-rtdb.firebaseio.com",
+    "project_id": "edeze-1faba",
+    "storage_bucket": "edeze-1faba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:329757272933:android:154c3aaf9c446d1e804f8c",
+        "android_client_info": {
+          "package_name": "com.example.edeze_v1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "329757272933-hl7hq1qohpjdmchg9bkgsagp2slmhjh9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAz0T12E4staUANR42aLs6NLV55-Qo1u88"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "329757272933-hl7hq1qohpjdmchg9bkgsagp2slmhjh9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

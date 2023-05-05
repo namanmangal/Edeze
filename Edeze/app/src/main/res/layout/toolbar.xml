@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- db -->
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/main_color_DARK"
+    android:elevation="4dp">
+
+    <ImageView
+        android:id="@+id/toolbarProfileImage"
+        android:background="@drawable/profile_icon_2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="toolbarProfileClick"/>
+
+    <ImageView
+        android:id="@+id/toolbarLogo"
+        android:src="@drawable/logo_normal"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"/>
+
+    <Spinner
+        android:id="@+id/navSpinner"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/radius_lightpurple"
+        android:spinnerMode="dropdown"
+        />
+
+</androidx.appcompat.widget.Toolbar>
